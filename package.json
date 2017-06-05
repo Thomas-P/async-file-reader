@@ -1,0 +1,28 @@
+{
+  "name": "file-reader",
+  "version": "0.0.1",
+  "description": "The library allows to create a file reader object, which can be read asynchronously, line-wise.",
+  "author": "Thomas-P",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thomas-P/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomas-P/file-reader.git"
+  },
+  "main": "./lib/file-reader",
+  "dependencies": {
+    "@types/node": "^7.0.27"
+  },
+  "scripts": {
+    "test": "./node_modules/typescript/bin/tsc && ./node_modules/mocha/bin/mocha"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^7.0.27",
+    "mocha": "^3.4.2",
+    "mochaccino": "^1.2.0",
+    "typescript": "^2.3.4"
+  }
+}
