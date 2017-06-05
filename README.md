@@ -1,4 +1,6 @@
 # Asynchronous File Reader
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Thomas-P/file-reader.svg)](https://greenkeeper.io/)
 File reader allows to read a file line wise. The advantage by this module is that you can write your asynchronous code in a linear way. That reduces the complexity of code. Using readFileSync could become complicated, when you should handle large files. 
 ```typescript
 const async main() {
