@@ -1,5 +1,5 @@
 {
-  "name": "file-reader",
+  "name": "async-file-reader",
   "version": "0.0.1",
   "description": "The library allows to create a file reader object, which can be read asynchronously, line-wise.",
   "author": "Thomas-P",
