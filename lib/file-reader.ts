@@ -1,9 +1,10 @@
-import {ReadStream, createReadStream} from "fs";
 /**
  * Create a file read object, that allows to read a file per line.
  * The file will only be read, when a listener is registered. So
  * we only need
  */
+import {createReadStream, ReadStream} from "fs";
+
 export class AsyncFileReader {
     private stream: ReadStream;
     private _isEnded: boolean = false;
