@@ -1,20 +1,20 @@
-import {FileReader} from "../lib/file-reader";
+import {AsyncFileReader} from "../lib/file-reader";
 import {expect} from "mochaccino";
 import {readFileSync} from "fs";
 
 describe('FileReader', () => {
     it('Should have the right interface', () => {
-        expect(typeof FileReader)
-            .toBe('function', 'The FileReader class a a function constructor.');
-        expect(typeof FileReader.createLineReader)
-            .toBe('function', 'The FileReader class has a static method createLineReader');
+        expect(typeof AsyncFileReader)
+            .toBe('function', 'The AsyncFileReader class a a function constructor.');
+        expect(typeof AsyncFileReader.createLineReader)
+            .toBe('function', 'The AsyncFileReader class has a static method createLineReader');
 
-        const fileReaderObject = FileReader.createLineReader('');
-        expect(fileReaderObject instanceof FileReader).toBe(true);
+        const fileReaderObject = AsyncFileReader.createLineReader('');
+        expect(fileReaderObject instanceof AsyncFileReader).toBe(true);
     });
 
-    it('Should have methods on FileReader object', () => {
-        const fReader = new FileReader('');
+    it('Should have methods on AsyncFileReader object', () => {
+        const fReader = new AsyncFileReader('');
         expect(fReader.readLine).toBeDefined();
         expect(typeof fReader.readLine).toBe('function');
     });
@@ -23,7 +23,7 @@ describe('FileReader', () => {
      * Check if we can read the file line by line
      */
     it('Should read a file line by line', async () => {
-        const fReader = new FileReader(__filename);
+        const fReader = new AsyncFileReader(__filename);
         const fileData = readFileSync(__filename);
         const lines = fileData.toString().split(/\r\n|\n/);
         let lineCount = 0;
@@ -39,7 +39,7 @@ describe('FileReader', () => {
     });
 
     it('Should return null or undefined, after all lines are read.', async () => {
-        const fReader = new FileReader(__filename);
+        const fReader = new AsyncFileReader(__filename);
         while (await fReader.readLine() !== undefined) {
         }
         expect(await fReader.readLine()).toBe(undefined)
