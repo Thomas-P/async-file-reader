@@ -9,7 +9,7 @@ Another feature is, that if you do not add a callback with `readLine()` the stre
 ```typescript
 const main = async () => {
     import {AsyncFileReader} from 'async-file-reader';
-    const fileReader = new FileReader('README.md');
+    const fileReader = new AsyncFileReader('README.md');
     let line: string;
     try {
         while ((line = await fileReader.readLine()) != null) {
