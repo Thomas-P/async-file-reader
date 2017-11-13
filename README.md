@@ -1,5 +1,5 @@
 # Asynchronous File Reader
-[![Greenkeeper badge](https://badges.greenkeeper.io/Thomas-P/file-reader.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/Thomas-P/file-reader.svg?branch=master)](https://travis-ci.org/Thomas-P/file-reader) [![Coverage Status](https://coveralls.io/repos/github/Thomas-P/file-reader/badge.svg)](https://coveralls.io/github/Thomas-P/file-reader) [![Known Vulnerabilities](https://snyk.io/test/github/thomas-p/file-reader/badge.svg)](https://snyk.io/test/github/thomas-p/file-reader)
+[![Greenkeeper badge](https://badges.greenkeeper.io/Thomas-P/async-file-reader.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/Thomas-P/async-file-reader.svg?branch=master)](https://travis-ci.org/Thomas-P/async-file-reader) [![Coverage Status](https://coveralls.io/repos/github/Thomas-P/async-file-reader/badge.svg)](https://coveralls.io/github/Thomas-P/async-file-reader) [![Known Vulnerabilities](https://snyk.io/test/github/thomas-p/async-file-reader/badge.svg)](https://snyk.io/test/github/thomas-p/async-file-reader)
 
 
 File reader allows to read a file line by line. The advantage by this module is that you can write your asynchronous code in a linear way. That reduces the complexity of code. Using readFileSync could become complicated, when you should handle large files.
