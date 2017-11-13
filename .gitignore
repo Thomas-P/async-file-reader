@@ -48,6 +48,8 @@ fabric.properties
 node_modules
 
 lib/*.js
+test/*.js
+
 *.map
 karma
 

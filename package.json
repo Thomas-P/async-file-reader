@@ -1,6 +1,6 @@
 {
   "name": "async-file-reader",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "The library allows to create a file reader object, which can be read asynchronously, line-wise.",
   "author": "Thomas-P",
   "license": "MIT",
@@ -16,7 +16,8 @@
     "@types/node": "^7.0.27"
   },
   "scripts": {
-    "test": "./node_modules/typescript/bin/tsc && ./node_modules/mocha/bin/mocha"
+    "postinstall": "tsc",
+    "test": "tsc && mocha"
   },
   "devDependencies": {
     "@types/mocha": "^2.2.41",
