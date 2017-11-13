@@ -4,7 +4,7 @@ import {ReadStream, createReadStream} from "fs";
  * The file will only be read, when a listener is registered. So
  * we only need
  */
-export class FileReader {
+export class AsyncFileReader {
     private stream: ReadStream;
     private _isEnded: boolean = false;
     private errorMessage;
@@ -46,8 +46,8 @@ export class FileReader {
         this.stream.pause();
     }
 
-    static createLineReader(fileName: string, bufferSize = 64, chunkSplit = '\n'): FileReader {
-        return new FileReader(fileName, bufferSize, chunkSplit);
+    static createLineReader(fileName: string, bufferSize = 64, chunkSplit = '\n'): AsyncFileReader {
+        return new AsyncFileReader(fileName, bufferSize, chunkSplit);
     }
 
 
