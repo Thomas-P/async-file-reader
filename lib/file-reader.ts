@@ -106,7 +106,7 @@ export class FileReader {
      * @returns {Promise<string>}
      */
     public readLine(): Promise<string> {
-        return new Promise((resolve, reject) => {
+        return new Promise<string>((resolve, reject) => {
             this.listener.push([resolve, reject]);
             this.sendChunks();
         });
