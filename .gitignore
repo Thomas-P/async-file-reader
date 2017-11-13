@@ -47,10 +47,11 @@ fabric.properties
 
 node_modules
 
-lib/*.js
 test/*.js
+test/*.map
 
-*.map
+types/*.js
+types/*.map
 karma
 
 karma/package.json
