@@ -1,6 +1,6 @@
 {
   "name": "async-file-reader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The library allows to create a file reader object, which can be read asynchronously, line-wise.",
   "author": "Thomas-P",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "@types/node": "^7.0.27"
   },
   "scripts": {
-    "postinstall": "tsc",
+    "postinstall": "tsc lib/file-reader",
     "test": "tsc && mocha"
   },
   "devDependencies": {

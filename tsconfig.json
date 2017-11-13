@@ -4,7 +4,11 @@
     "target": "es6",
     "sourceMap": true
   },
+  "include": [
+    "lib/**/*"
+  ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "**/*.spec.ts"
   ]
 }
