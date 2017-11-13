@@ -1,24 +1,25 @@
 {
   "name": "async-file-reader",
-  "version": "0.0.13",
+  "version": "0.0.21",
   "description": "The library allows to create a file reader object, which can be read a file asynchronously, line by line. The reader won't waste memory, because it will only read lines, when a callback ask for it. It can be used to transform data, which are ordered in lines, with simple async/await operations.",
   "author": "Thomas-P",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Thomas-P/issues"
+    "url": "https://github.com/Thomas-P/async-file-reader/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Thomas-P/file-reader.git"
+    "url": "git+https://github.com/Thomas-P/async-file-reader.git"
   },
   "main": "./lib/file-reader.js",
   "types": "./lib/file-reader.ts",
   "dependencies": {
     "@types/mocha": "^2.2.41",
-    "@types/node": "^8.0.51"
+    "@types/node": "^8.0.51",
+    "@types/sinon": "^2.3.7"
   },
   "scripts": {
-    "postinstall": "tsc --version && cd lib && tsc",
+    "postinstall": "tsc --version && tsc",
     "test": "tsc && mocha"
   },
   "devDependencies": {

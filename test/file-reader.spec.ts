@@ -1,13 +1,14 @@
 import {AsyncFileReader} from "../lib/file-reader";
 import {expect} from "mochaccino";
 import {readFileSync} from "fs";
+import {} from "mocha"
 
 describe('FileReader', () => {
     it('Should have the right interface', () => {
         expect(typeof AsyncFileReader)
-            .toBe('function', 'The AsyncFileReader class a a function constructor.');
+            .toBe('function');
         expect(typeof AsyncFileReader.createLineReader)
-            .toBe('function', 'The AsyncFileReader class has a static method createLineReader');
+            .toBe('function');
 
         const fileReaderObject = AsyncFileReader.createLineReader('');
         expect(fileReaderObject instanceof AsyncFileReader).toBe(true);
