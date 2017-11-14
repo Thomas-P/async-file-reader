@@ -4,11 +4,12 @@
 
 File reader allows to read a file line by line. The advantage by this module is that you can write your asynchronous code in a linear way. That reduces the complexity of code. Using readFileSync could become complicated, when you should handle large files.
 
-Another feature is, that if you do not add a callback with `readLine()` the stream is posed and will not waste memory. 
+Another feature is, that if you do not add a callback with `readLine()` the stream is paused and will not waste memory. 
 ## Usage
 ```typescript
+import {AsyncFileReader} from 'async-file-reader';
+
 const main = async () => {
-    import {AsyncFileReader} from 'async-file-reader';
     const fileReader = new AsyncFileReader('README.md');
     let line: string;
     try {
