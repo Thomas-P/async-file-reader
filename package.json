@@ -20,7 +20,7 @@
   "devDependencies": {
     "@types/node": "^8.0.51",
     "@types/mocha": "^2.2.41",
-    "@types/sinon": "^4.0.0",
+    "@types/sinon": "^7.0.4",
     "@types/mochaccino": "^1.2.0",
     "mocha": "^4.0.0",
     "mochaccino": "^1.2.0",
