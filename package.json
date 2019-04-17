@@ -18,7 +18,7 @@
     "test": "tsc && mocha"
   },
   "devDependencies": {
-    "@types/node": "^8.0.51",
+    "@types/node": "^11.13.5",
     "@types/mocha": "^2.2.41",
     "@types/sinon": "^4.0.0",
     "@types/mochaccino": "^1.2.0",
