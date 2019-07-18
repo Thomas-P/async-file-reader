@@ -22,7 +22,7 @@
     "@types/mocha": "^2.2.41",
     "@types/sinon": "^4.0.0",
     "@types/mochaccino": "^1.2.0",
-    "mocha": "^4.0.0",
+    "mocha": "^6.2.0",
     "mochaccino": "^1.2.0",
     "typescript": "^2.3.4"
   }
